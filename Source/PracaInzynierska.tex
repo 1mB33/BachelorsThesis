@@ -1,0 +1,111 @@
+% Packages // ---------------------------------------------------------------------------------------------------------
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+%\usepackage[polish]{babel}
+\usepackage{polski}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+%\usepackage[top=1.5cm,bottom=1.5cm,left=2cm,right=2cm]{geometry}
+% musialem lekko geometrie przerobic by sie footer pokazywal
+\usepackage[top=1.5cm, bottom=2.5cm, left=2cm, right=2cm, includefoot]{geometry}
+\usepackage{xcolor}
+%\usepackage{multirow,colortbl}
+\usepackage{multirow,colortbl}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{multicol}
+\usepackage{nicematrix}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tocloft}
+\usepackage{pdfpages}
+% ```\fontsize{32pt}{36pt}\selectfont``` support also niby ze ladniej wyglada
+% also to jest Times New Roman z matma
+\usepackage{mathptmx}
+%dodaje paczke fancy zeby byly takie rozne wodotryski -obrazek w rogu strony itd..
+\usepackage{fancyhdr}
+% "Times new roman 12, odstep 1.
+\usepackage{setspace}
+
+\usepackage{tabularx}
+
+\usepackage{makecell}
+
+\usepackage{longtable}
+
+\usepackage{amssymb}
+% ---------------------------------------------------------------------------------------------------------------------
+
+% Variables // --------------------------------------------------------------------------------------------------------
+\def\VERSION{1}
+% ---------------------------------------------------------------------------------------------------------------------
+
+% ---------------------------------------------------------------------------------------------------------------------
+\begin{document}
+% ---------------------------------------------------------------------------------------------------------------------
+
+% Header/footer // ----------------------------------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=2.0cm]{../Assets/ujklogo.png}}%[R] lub [L] oznacza strone po której będzie logo.
+\fancyhead[R]{
+	\scriptsize
+	\begin{tabular}{ll}
+		\textbf{Mateusz Gola 146986 (s146986@ujk.edu.pl)}
+	\end{tabular}
+}
+\fancyfoot[C]{\small IO, 2026}
+\fancyfoot[R]{\thepage }
+\renewcommand{\headrulewidth}{0.4pt}%to dodaje smooth linie pod naglowkiem
+\renewcommand{\footrulewidth}{0.4pt}
+\setlength{\headheight}{2cm} %logo nachodzilo na tekst więc zmienilem wielkość naglówka.
+\setlength{\footskip}{1.5cm}
+% ---------------------------------------------------------------------------------------------------------------------
+
+% Title page // -------------------------------------------------------------------------------------------------------
+\thispagestyle{empty}
+\setcounter{page}{0}
+\onehalfspacing
+\begin{center}
+    {\fontsize{16pt}{19pt}\selectfont UNIWERSYTET JANA KOCHANOWSKIEGO \\
+    W KIELCACH \par}
+    \vspace{0.5cm}
+    {\fontsize{16pt}{19pt}\selectfont WYDZIAŁ NAUK ŚCISŁYCH I PRZYRODNICZYCH \par}
+    {\fontsize{14pt}{19pt}\selectfont Kierunek: Informatyka \par}    
+    \vspace{2.5cm}
+    {\fontsize{19pt}{23pt}\selectfont \textbf{Mateusz Gola (s146986@ujk.edu.pl)}\par}
+    {\fontsize{12pt}{16pt}\selectfont Numer albumu 146986 \par}
+    \vspace{2.5cm}
+    {\fontsize{16pt}{19pt}\selectfont Dokumentacja projektowa \par} 
+    \vspace{0.2cm}
+    {\fontsize{24pt}{29pt}\selectfont PROJEKT I IMPLEMENTACJA SILNIKA GRY W TECHNOLOGII VULKAN \par} 
+\end{center}
+\begin{flushright}
+    \vspace{3cm}
+    \begin{minipage}{0.48\textwidth} % NOTE: jest bardzo ciasno tutaj, dalem miejsca tak tylko zeby sie zmiescilo 
+        {\fontsize{16pt}{19pt}\selectfont 
+            Prowadzący: \\
+            Dr. Mariusz Marzec
+        \par}
+    \end{minipage}
+\end{flushright}
+\vspace*{\fill}
+\begin{center}
+    {\fontsize{16pt}{19pt}\selectfont \textbf{KIELCE - \today} \par}
+    {\fontsize{16pt}{19pt}\selectfont \textbf{Wersja: \VERSION}}
+\end{center}
+\newpage
+% ---------------------------------------------------------------------------------------------------------------------
+
+
+% ---------------------------------------------------------------------------------------------------------------------
+\end{document}
+% ---------------------------------------------------------------------------------------------------------------------
